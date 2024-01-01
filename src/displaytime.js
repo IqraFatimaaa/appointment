@@ -39,3 +39,4 @@ function displaytime() {
     </form>
   )
 }
+export default displaytime;
