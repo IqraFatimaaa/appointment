@@ -1,0 +1,13 @@
+var mongoose = require('mongoose');
+var Schema = mongoose.Schema;
+
+var bookingSchema = new Schema({
+booking:          { type: Number, unique: true},
+User: String,
+StartTime:      Number,
+EndTime:    Number,
+bookedTime:   Number,
+creator:      {type: Schema.Types.ObjectId, ref: 'User'}
+});
+
+var Booking = mongoose.model('Book', bookingSchema);
