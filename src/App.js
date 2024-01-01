@@ -8,9 +8,11 @@ import avilabletime from './avilabletime'
 function App() {
   return (
     <div className="App">
+    <div class='div1'>
     <avilabletime/>
-     <displaytime/>
-     <booktimeslots/>
+    </div>
+    <div class='div2'> <displaytime/></div>
+     <div class='div3'><booktimeslots/></div>
 
     </div>
   );
